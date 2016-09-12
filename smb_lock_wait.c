@@ -8,7 +8,7 @@
 
 static void usage(void)
 {
-	printf("smb_wait_lock - wait for samba file freed from locking, and exit\n");
+	printf("smb_wait_lock v0.1 - wait for samba file freed from locking, and exit\n");
 	printf("\n");
 	printf("format: smb_wait_lock [options] filename\n");
 	printf("options:\n");
