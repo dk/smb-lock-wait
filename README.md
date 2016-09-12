@@ -8,10 +8,11 @@ The problem is that there's no easy way to tell that Samba finished copying the
 file, so programmers doing the task boldly burned their fingers by snatching an
 incomplete file.
 
-The reason that it is an unitity, not an API, is that only root can issue
+The reason that it is an utility, not an API, is that only root can issue
 kernel calls required to interoperate with Samba. Therefore this utility must
 be installed as root with setuid bit (yes, I know, random C code from internet
-with suid bit :)
+with suid bit :) -- but if your system can do F\_SETLEASE without being root,
+just don't then.
 
 Also, add this
 
